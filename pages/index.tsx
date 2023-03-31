@@ -2,7 +2,10 @@ import React from 'react'
 
 const Index = () => {
   return (
-    <div>Proyecto base Mercado libre clone</div>
+    <div>
+      <h1 className='text-center'>Proyecto base Mercado libre clone</h1>
+      
+    </div>
   )
 }
 
