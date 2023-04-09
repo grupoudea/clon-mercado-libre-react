@@ -5,9 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily:{
+      sans:['Roboto','sans-serif']
+    },
     extend: {
       colors:{
-        'yellow-ml':'#FFF159'
+        'yellow-ml':'#FFF159',
+        'gray-menu':'rgba(51, 51, 51, 0.6)'
       }
     },
   },

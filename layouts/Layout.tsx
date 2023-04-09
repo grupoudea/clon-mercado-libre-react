@@ -20,7 +20,7 @@ const Layout = () => (
             <title>Mercado Libre</title>
           
         </Head>
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap '>
         <HeaderComponent></HeaderComponent>
         <main> </main>
 
