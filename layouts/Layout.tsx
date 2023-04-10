@@ -5,7 +5,7 @@ interface LayoutProps {
     children: ReactNode;
 }
 
-const Layout = () => (
+const Layout = ({children}:LayoutProps) => (
     // <main className='flex h-screen w-full flex-col md:flex-row'>
     //     {/* <NavigationContextProvider>
 
@@ -16,14 +16,17 @@ const Layout = () => (
     // </main>
    
         <>
-        <Head>
-            <title>Mercado Libre</title>
-          
-        </Head>
-        <div className='flex flex-wrap '>
-        <HeaderComponent></HeaderComponent>
-        <main> </main>
-
+            <Head>
+                <title>Mercado Libre</title>
+            </Head>
+            <div className='flex flex-wrap '>
+            <HeaderComponent></HeaderComponent>
+                <main className='w-full '>
+                   <div className='bg-[#EBEBEB]'>
+                        {children}
+                   </div>    
+                </main>
+            {/* FooterComponent here */}
         </div>
         </>
     
