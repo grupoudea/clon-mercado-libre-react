@@ -3,6 +3,8 @@ import Head from "next/head";
 import {NextPage} from "next";
 import Layout from "@/layouts/Layout";
 import {MercadolibreContextProvider} from "@/context/MercadolibreContext";
+import Collections from "@/pages/Collections";
+import {Container} from "@mui/material";
 
 const Index: NextPage = () => (
     <>
@@ -13,7 +15,9 @@ const Index: NextPage = () => (
         </Head>
         <Layout>
             <MercadolibreContextProvider>
-
+                <Container>
+                    <Collections></Collections>
+                </Container>
             </MercadolibreContextProvider>
         </Layout>
     </>
