@@ -18,12 +18,15 @@ const Layout = ({children}:LayoutProps) => (
         <>
             <Head>
                 <title>Mercado Libre</title>
-            
             </Head>
             <div className='flex flex-wrap '>
             <HeaderComponent></HeaderComponent>
-                <main className='w-full'>{children}</main>
-            {/* Footer here */}
+                <main className='w-full '>
+                   <div className='bg-[#EBEBEB]'>
+                        {children}
+                   </div>    
+                </main>
+            {/* FooterComponent here */}
         </div>
         </>
     
