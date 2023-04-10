@@ -1,15 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
- 
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily:{
+      sans:['Roboto','sans-serif']
+    },
+    extend: {
+      colors:{
+        'yellow-ml':'#FFF159',
+        'gray-menu':'rgba(51, 51, 51, 0.6)'
+      }
+    },
   },
   plugins: [],
 }
