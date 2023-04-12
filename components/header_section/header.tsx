@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import CartIcon from './carIcon';
 const HeaderComponent=()=>{
     return( 
     <div className="flex bg-yellow-ml h-[100px] justify-center w-full basis-full ">
@@ -53,10 +54,7 @@ const HeaderComponent=()=>{
                     <li><a href="#" className="hover:text-black">Ingresa</a></li>
                     <li><a href="#" className="hover:text-black">Mis compras</a></li>
                 </ul>
-                <div className='flex cursor-pointer items-center justify-center'>
-                    <span className='text-white absolute text-[14px] ml-[2px] mb-[9px]'>5</span>
-                    <Image width={40} height={30} src="/media/ShopCar.svg" alt="" />
-                </div>
+                <CartIcon></CartIcon>
             </div>
         </div>
     </div>
