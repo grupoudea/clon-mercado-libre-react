@@ -18,7 +18,6 @@ const Index: NextPage = () => (
                 <Layout>
                     <BannerComponent></BannerComponent>
                     <PaymentsComponent></PaymentsComponent>
-                    <CollectionsComponent></CollectionsComponent>
                     <div className='flex flex-row justify-center gap-x-10'>
                         <TestComponent productName="product1" price={1200}></TestComponent>
                         <TestComponent productName="product2" price={1500}></TestComponent>
@@ -27,6 +26,7 @@ const Index: NextPage = () => (
                         <TestComponent productName="product5" price={25000}></TestComponent>
                         <TestComponent productName="product6" price={12000}></TestComponent>
                     </div>
+                    <CollectionsComponent></CollectionsComponent>
                     <CheckoutModal></CheckoutModal>
                     <Toast></Toast>
                 </Layout>
