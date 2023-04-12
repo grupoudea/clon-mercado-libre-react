@@ -11,7 +11,8 @@ module.exports = {
     extend: {
       colors:{
         'yellow-ml':'#FFF159',
-        'gray-menu':'rgba(51, 51, 51, 0.6)'
+        'gray-menu':'rgba(51, 51, 51, 0.6)',
+        'blue-dropdown': '#3483fa'
       }
     },
   },
