@@ -1,5 +1,6 @@
 import {Container} from "@mui/material";
 import SectionHeaderComponent from "@/components/SectionHeaderComponent";
+import CategoriesItemComponent from "@/components/categories-section/CategoriesItemComponent";
 
 const CategoriesComponent = () => {
     const posts = [
@@ -66,10 +67,7 @@ const CategoriesComponent = () => {
                 <SectionHeaderComponent title={"Categorías populares"} subtitle={""} isSubtitleList={false}></SectionHeaderComponent>
                 <div className="grid grid-cols-7 gap-0.5 mb-10 bg-opacity-0.002 shadow-sm rounded-4">
                     {posts.map((item, key) => (
-                        <div className="box-border bg-white border-b border-r border-gray-300 flex flex-col justify-center items-center pt-10 pb-10" key={key}>
-                            <img src={item.img} alt=""/>
-                            <span className="font-normal text-xs text-gray-700 ">{item.info}</span>
-                        </div>
+                        <CategoriesItemComponent key={key} idKey={key} src={item.img} title={item.info}></CategoriesItemComponent>
                     ))}
                 </div>
             </div>
