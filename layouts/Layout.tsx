@@ -1,6 +1,7 @@
 import React, {ReactNode} from 'react';
 import Head from 'next/head';
 import {HeaderComponent} from '@/components/header_section/header';
+import {FooterComponent} from "@/components/footer-section/FooterComponent";
 
 interface LayoutProps {
     children: ReactNode;
@@ -18,7 +19,7 @@ const Layout = ({children}: LayoutProps) => (
                     {children}
                 </div>
             </main>
-            {/* FooterComponent here */}
+            <FooterComponent></FooterComponent>
         </div>
     </>
 );
