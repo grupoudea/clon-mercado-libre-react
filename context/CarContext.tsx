@@ -11,7 +11,6 @@ interface CarContextProps {
 interface CarItem{
     name:string;
     price:number;
-    // image:string;
     quantity:number;
 }
 

@@ -2,10 +2,10 @@ import { useCart } from "@/context/CarContext";
 import { useToast } from "@/context/toastContext";
 import React from "react";
 
+//TODO: Eliminar componente cuando se cree componente de ofertas 
 interface buttonProps {
     productName: string;
     price: number;
-    // image: string;
 }
 
 const TestComponent = (button: buttonProps) => {
@@ -16,7 +16,7 @@ const TestComponent = (button: buttonProps) => {
     const AddItemToCar = () => {
         addItem({
             name: button.productName, price: button.price, quantity: 1
-            // image:button.image
+        
         });
         setToast({ message: "Producto agregado correctamente", type: "success",
         open:true });

@@ -1,8 +1,6 @@
 import { useCart } from '@/context/CarContext';
-import { Dialog, DialogContent, DialogTitle } from '@mui/material';
 import Image from 'next/image';
-import { useState } from 'react';
-import { Modal } from '../modals/modal';
+
 const CartIcon = () => {
   const { items } = useCart();
   const itemCount = items.reduce((total, item) => total + item.quantity, 0);
