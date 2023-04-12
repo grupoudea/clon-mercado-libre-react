@@ -53,8 +53,8 @@ const CollectionsComponent = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-4 gap-x-1 gap-y-1">
-                        {posts.map((items, key) => (
-                            <CollectionsItemComponent key={key} src={items.img}></CollectionsItemComponent>
+                        {posts.map((items, idKey) => (
+                            <CollectionsItemComponent key={idKey} src={items.img}></CollectionsItemComponent>
                         ))}
                     </div>
                 </div>
