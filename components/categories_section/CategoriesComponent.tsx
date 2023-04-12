@@ -1,6 +1,6 @@
 import {Container} from "@mui/material";
 import SectionHeaderComponent from "@/components/SectionHeaderComponent";
-import CategoriesItemComponent from "@/components/categories-section/CategoriesItemComponent";
+import CategoriesItemComponent from "@/components/categories_section/CategoriesItemComponent";
 
 const CategoriesComponent = () => {
     const posts = [
