@@ -3,6 +3,7 @@ import Head from 'next/head';
 import {HeaderComponent} from '@/components/header_section/header';
 import { Container } from '@mui/material';
 import { BannerComponent } from '@/components/banner';
+import {FooterComponent} from "@/components/footer-section/FooterComponent";
 
 interface LayoutProps {
     children: ReactNode;
@@ -21,7 +22,7 @@ const Layout = ({children}: LayoutProps) => (
                     {children}
                 </Container>
             </main>
-            {/* FooterComponent here */}
+            <FooterComponent></FooterComponent>
         </div>
     </>
 );
