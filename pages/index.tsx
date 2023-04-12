@@ -12,6 +12,7 @@ import {Toast} from '@/components/toast/toast';
 import CollectionsComponent from "@components/collection_section/CollectionsComponent";
 import SuscriptionComponent from '@/components/suscription_section/SuscriptionComponent';
 import OfferComponent from '@/components/offers_section/OfferComponent';
+import CategoriesComponent from "@components/categories_section/CategoriesComponent";
 
 const Index: NextPage = () => (
     <>
@@ -29,6 +30,7 @@ const Index: NextPage = () => (
                         <TestComponent productName="product6" price={12000}></TestComponent>
                     </div>
                     <CollectionsComponent></CollectionsComponent>
+                    <CategoriesComponent></CategoriesComponent>
                     <CheckoutModal></CheckoutModal>
                     <Toast></Toast>
                 </Layout>
