@@ -10,6 +10,7 @@ import {CheckoutModal} from '@/components/header_section/checkoutModal';
 import {ToastContextProvider} from '@/context/toastContext';
 import {Toast} from '@/components/toast/toast';
 import CollectionsComponent from "@components/collection_section/CollectionsComponent";
+import CategoriesComponent from "@components/categories_section/CategoriesComponent";
 
 const Index: NextPage = () => (
     <>
@@ -27,6 +28,7 @@ const Index: NextPage = () => (
                         <TestComponent productName="product6" price={12000}></TestComponent>
                     </div>
                     <CollectionsComponent></CollectionsComponent>
+                    <CategoriesComponent></CategoriesComponent>
                     <CheckoutModal></CheckoutModal>
                     <Toast></Toast>
                 </Layout>
