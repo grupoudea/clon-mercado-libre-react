@@ -10,8 +10,10 @@ const PaymentsComponent= ()=>{
                 <PaymentItemComponent src="media/payment-agreement.svg" text="Paga en efectivo" ></PaymentItemComponent>
                 <span className="border-l-[1px] border-[#EEEEEE] h-full"></span>
                 <PaymentItemComponent src="media/view-more.svg" text="Más medios de pago" ></PaymentItemComponent>
-            </div>        
+            </div> 
+                 
         </div>
+        
     )
 }
 
