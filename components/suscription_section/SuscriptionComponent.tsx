@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 
 
-const Suscripcion = () => {
+const SuscriptionComponent = () => {
   return (
     <>
             <div className="suscripcion ">
@@ -81,4 +81,4 @@ const Suscripcion = () => {
   )
 }
 
-export default Suscripcion
+export default SuscriptionComponent

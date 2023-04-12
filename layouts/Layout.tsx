@@ -1,32 +1,29 @@
-import React, { ReactNode } from 'react';
+import React, {ReactNode} from 'react';
 import Head from 'next/head';
-import { HeaderComponent } from '@/components/header';
+import {HeaderComponent} from '@/components/header_section/header';
+import { Container } from '@mui/material';
+import { BannerComponent } from '@/components/banner';
+
 interface LayoutProps {
     children: ReactNode;
 }
 
-const Layout = () => (
-    // <main className='flex h-screen w-full flex-col md:flex-row'>
-    //     {/* <NavigationContextProvider>
-
-    //     </NavigationContextProvider> */
-        
-    //     }
-    //     <section className='flex h-full w-full'>{children}</section>
-    // </main>
-   
-        <>
+const Layout = ({children}: LayoutProps) => (
+    <>
         <Head>
             <title>Mercado Libre</title>
-          
         </Head>
         <div className='flex flex-wrap '>
-        <HeaderComponent></HeaderComponent>
-        <main> </main>
-
+            <HeaderComponent></HeaderComponent>
+            <BannerComponent></BannerComponent>
+            <main className='w-full bg-[#EBEBEB]'>
+                <Container className='debug'>
+                    {children}
+                </Container>
+            </main>
+            {/* FooterComponent here */}
         </div>
-        </>
-    
+    </>
 );
 
 export default Layout;
