@@ -36,7 +36,6 @@ const CollectionsComponent = () => {
         },
     ];
     return (
-        <Container>
             <div className="mt-20">
                 <SectionHeaderComponent title={"Colecciones:"} subtitle={"Supermercado"}
                                         isSubtitleList={true}></SectionHeaderComponent>
@@ -54,12 +53,11 @@ const CollectionsComponent = () => {
                     </div>
                     <div className="grid grid-cols-4 gap-x-1 gap-y-1">
                         {posts.map((items, idKey) => (
-                            <CollectionsItemComponent key={idKey} src={items.img}></CollectionsItemComponent>
+                            <CollectionsItemComponent src={items.img} idKey={idKey}></CollectionsItemComponent>
                         ))}
                     </div>
                 </div>
             </div>
-        </Container>
     )
 }
 

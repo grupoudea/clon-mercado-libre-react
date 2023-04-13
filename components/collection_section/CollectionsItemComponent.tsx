@@ -1,11 +1,12 @@
+import { log } from 'console';
 import Image from 'next/image';
 
 interface CollectionsItemComponentProps {
-    key: any;
+    idKey: number;
     src: string;
 }
 
-const CollectionsItemComponent = ({idKey, src}: CollectionsItemComponentProps) => {
+const CollectionsItemComponent = ({idKey, src}: CollectionsItemComponentProps) => {    
     return (
         <div className="rounded-4 bg-white" key={idKey}>
             <Image src={src} alt={""} width={184} height={184} />

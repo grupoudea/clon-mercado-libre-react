@@ -23,7 +23,7 @@ const CarContext = createContext<CarContextProps>({} as CarContextProps);
 const CarContextProvider = ({children}: CarContextProviderProps) => {
     const [carItem,setCartItem] = useState<CarItem[]>([]);
     const [openCheckout, SetOpenCheckout] = useState<boolean>(false);
-    const addItem = (item:CarItem)=>{
+    const addItem = (item: CarItem)=>{
         setCartItem((prevItems) => {
             const existingItem = prevItems.find((i)=>i.name===item.name);
             if(existingItem){

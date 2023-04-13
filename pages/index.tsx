@@ -10,7 +10,10 @@ import {CheckoutModal} from '@/components/header_section/checkoutModal';
 import {ToastContextProvider} from '@/context/toastContext';
 import {Toast} from '@/components/toast/toast';
 import CollectionsComponent from "@components/collection_section/CollectionsComponent";
+import SuscriptionComponent from '@/components/suscription_section/SuscriptionComponent';
+import OfferComponent from '@/components/offers_section/OfferComponent';
 import CategoriesComponent from "@components/categories_section/CategoriesComponent";
+import { Container } from '@mui/material';
 
 const Index: NextPage = () => (
     <>
@@ -18,19 +21,16 @@ const Index: NextPage = () => (
             <CarContextProvider>
                 <Layout>
                     <BannerComponent></BannerComponent>
-                    <PaymentsComponent></PaymentsComponent>
-                    <div className='flex flex-row justify-center gap-x-10'>
-                        <TestComponent productName="product1" price={1200}></TestComponent>
-                        <TestComponent productName="product2" price={1500}></TestComponent>
-                        <TestComponent productName="product3" price={100}></TestComponent>
-                        <TestComponent productName="product4" price={1800}></TestComponent>
-                        <TestComponent productName="product5" price={25000}></TestComponent>
-                        <TestComponent productName="product6" price={12000}></TestComponent>
+                    <div className='pt-[40px] m-auto w-[1200px]'>
+                        <PaymentsComponent></PaymentsComponent>
+                        <OfferComponent></OfferComponent>
+                        <SuscriptionComponent></SuscriptionComponent>
+                        <CollectionsComponent></CollectionsComponent>
+                        <CategoriesComponent></CategoriesComponent>
+                        <CheckoutModal></CheckoutModal>
+                        <Toast></Toast>
                     </div>
-                    <CollectionsComponent></CollectionsComponent>
-                    <CategoriesComponent></CategoriesComponent>
-                    <CheckoutModal></CheckoutModal>
-                    <Toast></Toast>
+                    
                 </Layout>
             </CarContextProvider>
         </ToastContextProvider>
