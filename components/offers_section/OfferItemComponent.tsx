@@ -28,12 +28,12 @@ const OfferItemComponent = ({idKey, src, price, discount, isFreeShipping, isFull
         const itemFound = items.find((item) => {
             return item.name == carItem.name;
         })
-        
+
         const quantity = (itemFound?.quantity)?itemFound.quantity+1: carItem.quantity;
 
         setToast({ message: `Has agregado ${quantity} producto ${carItem.name}`, type: "success",
         open:true });
-        
+
     }
 
     const addDots = (num: number) => {
@@ -45,9 +45,6 @@ const OfferItemComponent = ({idKey, src, price, discount, isFreeShipping, isFull
         }
         return result.slice(0, -1);
       }
-      
-
-
 
   return (
     <>

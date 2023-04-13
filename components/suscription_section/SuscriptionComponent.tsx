@@ -1,82 +1,68 @@
 import React from 'react'
 import Image from 'next/image';
+import SuscriptionItemComponent from './SuscriptionItemComponent';
 
 
 const SuscriptionComponent = () => {
+
+    const suscriptions = [
+        {
+            img: "/media/main/suscripcion/svg/disney.svg",
+            text: "Disney+ sin cargo"
+        },
+        {
+            img: "/media/main/suscripcion/svg/star.svg",
+            text: "Star+ sin cargo"
+        },
+        {
+            img: "/media/main/suscripcion/svg/carrito.svg",
+            text: "Envíos gratis y rápidos desde $ 90.000\ny 40% OFF en envíos de menos de $ 90.000"
+        }
+    ]
+
   return (
     <>
-            <div className="suscripcion ">
-                <div className="suscripcion-encabezado">
-                    <div className="suscripcion-nivel">
-                        <span>Suscríbete al nivel 6</span>
-                    </div>
-
-                    <div className="suscripcion-tarifa">
-                        <div className="barra-tarifa">
-                        </div>
-                        <div>
-                            <span className="suscripcion-valor-antes">$ 50.690</span>
-                            <div className="suscripcion-tarifa-detalle">
-                                <span className="suscripcion-valor-ahora">$ 17.899 </span>
-                                <span className="suscripcion-valor-mes"> /mes</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-
+        <div className="suscripcio shadow-sm m-auto w-[1180px] h-[340px] bg-white rounded-md ">
+            <div className="suscripcion-encabezado rounded-tl-md rounded-tr-md flex flex-row justify-between pl-[24px] pr-[24px] h-[87px] 
+                bg-gradient-to-r from-a90f90 via-transparent to-0c1a51">
+                <div className="font-roboto font-semibold text-2xl leading-8 flex items-center text-white">
+                    <span>Suscríbete al nivel 6</span>
                 </div>
-                <div className="suscripcion-cuerpo">
-                    <span className="sus-cuerpo-titulo">Consigue los mejores beneficios en Mercado Libre</span>
 
-                    <div className="sus-elementos">
-
-                        <div className="sus-elemento">
-                            <div className="sus-icon">
-                                <Image width={72} height={72} src="/media/main/suscripcion/svg/disney.svg" alt="" />
-                                    
-                            </div>
-                            <div className="sus-texto">
-                                <span>Disney+ sin cargo</span>
-                            </div>
-
+                <div className="flex flex-row items-center px-0 pb-[2px]">
+                    <div className="h-[37px] border-l-2 border-white pr-[7px]"></div>
+                    <div>
+                        <span className="w-[56px] h-[14px] font-roboto font-[500] text-sm leading-[14px] flex items-center text-right line-through text-white">$ 50.690</span>
+                        <div className="flex flex-row">
+                            <span className="w-[88px] h-[24px] font-roboto font-semibold text-[22px]
+                            leading-6 flex items-center text-right text-white">$ 17.899 </span>
+                            <span className="font-roboto font-semibold text-xs leading-[14px] flex  items-center text-right text-white"> /mes</span>
                         </div>
-
-                        <div className="sus-elemento">
-                            <div className="sus-icon">
-                                <Image width={72} height={72} src="/media/main/suscripcion/svg/star.svg" alt="" />
-
-                                    
-                            </div>
-                            <div className="sus-texto">
-                                <span>Star+ sin cargo</span>
-                            </div>
-
-                        </div>
-
-                        <div className="sus-elemento">
-                            <div className="sus-icon">
-                                <Image width={72} height={72} src="/media/main/suscripcion/svg/carrito.svg" alt="" />
-                                    
-                            </div>
-                            <div className="sus-texto">
-                                <span>Envíos gratis y rápidos desde $ 90.000
-                                    y 40% OFF en envíos de menos de $ 90.000
-                                </span>
-                            </div>
-
-                        </div>
-
                     </div>
 
                 </div>
-                <div className="suscripcion-footer">
-                    <a className="sus-btn-suscribete">
-                        <span className="sus-btn-texto">Suscríbete</span>
-                    </a>
 
+            </div>
+            <div className="h-[172px] pl-6">
+                <span className="flex items-center pt-5 font-roboto font-normal text-[17px] leading-[18px] text-black">Consigue los mejores beneficios en Mercado Libre</span>
+
+                <div className="flex flex-row justify-between pt-8 pr-16">
+                    {suscriptions.map((item, id) => (
+                        <SuscriptionItemComponent src={item.img} text={item.text}></SuscriptionItemComponent>
+                    ))}
                 </div>
 
-            </div>    
+            </div>
+            <div className="box-border h-[81px] border-t-[1px]
+             border-gray-200 flex flex-row justify-end pr-8 pt-4">
+                <a className="w-[124px] h-12 bg-[#3483FA] rounded-md">
+                    <span className="flex flex-col items-center text-center
+                    font-roboto font-semibold text-[15px] leading-[48px] text-white">Suscríbete</span>
+                </a>
+
+            </div>
+
+        </div>
     </>
   )
 }
