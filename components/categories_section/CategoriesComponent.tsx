@@ -64,10 +64,13 @@ const CategoriesComponent = () => {
     return (
         <Container>
             <div className="mt-20">
-                <SectionHeaderComponent title={"Categorías populares"} subtitle={""} isSubtitleList={false}></SectionHeaderComponent>
-                <div className="grid grid-cols-7 gap-0.5 mb-10 bg-opacity-0.002 shadow-sm rounded-4">
+                <SectionHeaderComponent title={"Categorías populares"} subtitle={""}
+                                        isSubtitleList={false}></SectionHeaderComponent>
+                <div
+                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7 gap-x-0.5 sm:gap-x-1 md:gap-x-2 gap-y-2 mb-10 bg-opacity-0.002 shadow-sm rounded-4 w-full">
                     {posts.map((item, key) => (
-                        <CategoriesItemComponent key={key} idKey={key} src={item.img} title={item.info}></CategoriesItemComponent>
+                        <CategoriesItemComponent key={key} idKey={key} src={item.img}
+                                                 title={item.info}></CategoriesItemComponent>
                     ))}
                 </div>
             </div>

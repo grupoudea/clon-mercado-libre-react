@@ -3,9 +3,10 @@ import Image from "next/image";
 
 const FooterInfoComponent = () => {
     return (
-        <div className="h-80 bg-white pl-36 pr-36 text-center">
+        <div
+            className="mx-auto px-4 md:px-8 lg:px-12 xl:px-24 flex flex-col items-center justify-center md:text-center">
             <div className="mx-auto flex flex-row justify-center">
-                <div className="w-1/3 flex flex-col justify-center items-center p-[35px] md:p-45px lg:p-20px">
+                <div className="w-full md:w-1/3 flex flex-col justify-center items-center p-4">
                     <div className="mb-6">
                         <Image src="/media/main/informacion-adicional/svg/payment.svg.svg" alt={""} width={66}
                                height={46}/>
@@ -24,7 +25,7 @@ const FooterInfoComponent = () => {
                     </div>
                 </div>
                 <div className="mt-24 w-px h-16 bg-gray-300"></div>
-                <div className="w-1/3 flex flex-col justify-center items-center p-[35px] md:p-45px lg:p-20px">
+                <div className="w-full md:w-1/3 flex flex-col justify-center items-center p-4">
                     <div className="mb-6">
                         <Image src="/media/main/informacion-adicional/svg/shipping.svg.svg" alt={""} width={56}
                                height={49}/>
@@ -42,7 +43,7 @@ const FooterInfoComponent = () => {
                     </div>
                 </div>
                 <div className="mt-24 w-px h-16 bg-gray-300"></div>
-                <div className="w-1/3 flex flex-col justify-center items-center p-[35px] md:p-45px lg:p-20px">
+                <div className="w-full md:w-1/3 flex flex-col justify-center items-center p-4">
                     <div className="mb-6">
                         <Image src="/media/main/informacion-adicional/svg/protected.svg.svg" alt={""} width={51}
                                height={55}/>

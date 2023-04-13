@@ -39,8 +39,8 @@ const CollectionsComponent = () => {
             <div className="mt-20">
                 <SectionHeaderComponent title={"Colecciones:"} subtitle={"Supermercado"}
                                         isSubtitleList={true}></SectionHeaderComponent>
-                <div className={"mx-auto max-w-1184 flex mt-1 flex-row gap-4"}>
-                    <div className="bg-white shadow-md rounded-4">
+                <div className="mx-auto w-auto flex mt-1 flex-row sm:flex-row gap-4 sm:gap-8">
+                    <div className="bg-white shadow-md rounded-4 w-full sm:w-1/2">
                         <div>
                             <Image src={post.img} alt={""} width={383} height={383}/>
                         </div>
@@ -51,7 +51,7 @@ const CollectionsComponent = () => {
                                 className="font-medium text-lg leading-7 flex items-center uppercase text-gray-700">Supermercado</span>
                         </div>
                     </div>
-                    <div className="grid grid-cols-4 gap-x-1 gap-y-1">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-2 gap-y-2 mt-8 sm:mt-0">
                         {posts.map((items, idKey) => (
                             <CollectionsItemComponent src={items.img} idKey={idKey}></CollectionsItemComponent>
                         ))}
