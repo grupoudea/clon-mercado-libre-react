@@ -3,12 +3,12 @@ import {MdKeyboardArrowDown} from "react-icons/md";
 interface SectionHeaderComponentProps {
     title: string;
     subtitle: string;
-    isSubtitleList
+    isSubtitleList: boolean
 }
 
 const SectionHeaderComponent = ({title, subtitle, isSubtitleList}: SectionHeaderComponentProps) => {
     return (
-        <div className="flex flex-row">
+        <div className="flex flex-row pb-6">
             <h2>
                 <span className="text-2xl font-light text-gray-400">{title} </span>
                 {!isSubtitleList && (

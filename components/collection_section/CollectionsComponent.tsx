@@ -36,7 +36,8 @@ const CollectionsComponent = () => {
         },
     ];
     return (
-            <div className="mt-20">
+            <Container>
+                <div className="mt-20">
                 <SectionHeaderComponent title={"Colecciones:"} subtitle={"Supermercado"}
                                         isSubtitleList={true}></SectionHeaderComponent>
                 <div className={"mx-auto max-w-1184 flex mt-1 flex-row gap-4"}>
@@ -58,6 +59,7 @@ const CollectionsComponent = () => {
                     </div>
                 </div>
             </div>
+            </Container>
     )
 }
 

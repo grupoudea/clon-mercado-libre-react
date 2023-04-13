@@ -5,7 +5,6 @@ import Layout from "@/layouts/Layout";
 import {BannerComponent} from '@/components/banner';
 import {PaymentsComponent} from '@/components/payment_section/payments';
 import {CarContextProvider} from '@/context/CarContext';
-import {TestComponent} from '@/components/Test';
 import {CheckoutModal} from '@/components/header_section/checkoutModal';
 import {ToastContextProvider} from '@/context/toastContext';
 import {Toast} from '@/components/toast/toast';
@@ -14,6 +13,7 @@ import SuscriptionComponent from '@/components/suscription_section/SuscriptionCo
 import OfferComponent from '@/components/offers_section/OfferComponent';
 import CategoriesComponent from "@components/categories_section/CategoriesComponent";
 import { Container } from '@mui/material';
+import BeneficiesComponent from '@/components/beneficies_section/BeneficiesComponent';
 
 const Index: NextPage = () => (
     <>
@@ -25,6 +25,7 @@ const Index: NextPage = () => (
                         <PaymentsComponent></PaymentsComponent>
                         <OfferComponent></OfferComponent>
                         <SuscriptionComponent></SuscriptionComponent>
+                        <BeneficiesComponent></BeneficiesComponent>
                         <CollectionsComponent></CollectionsComponent>
                         <CategoriesComponent></CategoriesComponent>
                         <CheckoutModal></CheckoutModal>
