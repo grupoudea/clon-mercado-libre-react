@@ -18,16 +18,20 @@ interface OfferItemComponentProps {
 }
 
 const OfferItemComponent = ({idKey, src, price, discount, isFreeShipping, isFullFreeShipping}: OfferItemComponentProps) => {
-    const { addItem } = useCart();
+    const { addItem, items } = useCart();
     const { setToast } = useToast();
 
 
     const AddItemToCar = () => {
-        addItem({
-            name: "product_"+idKey, price: price, quantity: 1
+        const carItem = {name: "product_"+idKey, price: price, quantity: 1}
+        addItem(carItem);
+        const itemFound = items.find((item) => {
+            return item.name == carItem.name;
+        })
         
-        });
-        setToast({ message: "Producto agregado correctamente", type: "success",
+        const quantity = (itemFound?.quantity)?itemFound.quantity+1: carItem.quantity;
+
+        setToast({ message: `Has agregado ${quantity} producto ${carItem.name}`, type: "success",
         open:true });
         
     }
