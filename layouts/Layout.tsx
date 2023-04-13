@@ -16,11 +16,8 @@ const Layout = ({children}: LayoutProps) => (
         </Head>
         <div className='flex flex-wrap '>
             <HeaderComponent></HeaderComponent>
-            <BannerComponent></BannerComponent>
             <main className='w-full bg-[#EBEBEB]'>
-                <Container className='debug'>
-                    {children}
-                </Container>
+                {children}
             </main>
             <FooterComponent></FooterComponent>
         </div>
