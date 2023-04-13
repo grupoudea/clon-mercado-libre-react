@@ -22,9 +22,9 @@ const SuscriptionComponent = () => {
 
   return (
     <>
-        <div className="suscripcio shadow-sm m-auto w-[1180px] h-[340px] bg-white rounded-md ">
-            <div className="suscripcion-encabezado rounded-tl-md rounded-tr-md flex flex-row justify-between pl-[24px] pr-[24px] h-[87px] 
-                bg-gradient-to-r from-a90f90 via-transparent to-0c1a51">
+        <div className="shadow-sm m-auto w-[1180px] h-[340px] bg-white rounded-md ">
+            <div className="rounded-tl-md rounded-tr-md flex flex-row justify-between pl-[24px] pr-[24px] h-[87px]
+            bg-gradient-to-r from-pink-600 to-indigo-900">
                 <div className="font-roboto font-semibold text-2xl leading-8 flex items-center text-white">
                     <span>Suscríbete al nivel 6</span>
                 </div>

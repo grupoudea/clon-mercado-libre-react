@@ -8,7 +8,7 @@ interface SuscriptionItemComponentProps {
 
 const SuscriptionItemComponent = (suscriptionItemProps: SuscriptionItemComponentProps) => {
   return (
-    <div className="flex flex-row items-center debug ">
+    <div className="flex flex-row items-center">
         <div className="mr-[17px]">
             <Image width={72} height={72} src={suscriptionItemProps.src} alt="" />
 

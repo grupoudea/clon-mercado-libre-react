@@ -6,9 +6,7 @@ interface CollectionsItemComponentProps {
     src: string;
 }
 
-const CollectionsItemComponent = ({idKey, src}: CollectionsItemComponentProps) => {
-    console.log(idKey);
-    
+const CollectionsItemComponent = ({idKey, src}: CollectionsItemComponentProps) => {    
     return (
         <div className="rounded-4 bg-white" key={idKey}>
             <Image src={src} alt={""} width={184} height={184} />

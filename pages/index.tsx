@@ -21,7 +21,7 @@ const Index: NextPage = () => (
             <CarContextProvider>
                 <Layout>
                     <BannerComponent></BannerComponent>
-                    <div className='debug pt-[40px] m-auto w-[1200px]'>
+                    <div className='pt-[40px] m-auto w-[1200px]'>
                         <PaymentsComponent></PaymentsComponent>
                         <OfferComponent></OfferComponent>
                         <SuscriptionComponent></SuscriptionComponent>

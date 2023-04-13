@@ -53,7 +53,7 @@ const OfferComponent = () => {
 
   return (
     <>
-        <div className="debug mt-[50px] px-[8px] h-[460px]">
+        <div className="mt-[50px] px-[8px] h-[460px]">
         <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
                                         isSubtitleList={false}></SectionHeaderComponent>
 
