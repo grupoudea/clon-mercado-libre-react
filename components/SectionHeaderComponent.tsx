@@ -17,7 +17,7 @@ const SectionHeaderComponent = ({title, subtitle, isSubtitleList}: SectionHeader
                 )}
                 {isSubtitleList && (
                     <a className="text-xs sm:text-2xl font-semibold text-gray-500 ml-2 sm:ml-0" href="#">{subtitle}
-                        <button className='icon-dark text-blue-dropdown'>
+                        <button className='icon-dark text-blue-link'>
                             <MdKeyboardArrowDown/>
                         </button>
                     </a>
