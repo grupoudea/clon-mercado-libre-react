@@ -29,8 +29,8 @@ const FooterComponent = () => {
                     </div>
                     <div className="flex flex-col gap-2 mt-1 items-center md:items-start">
                         <span
-                            className="font-normal text-xs leading-4 text-gray-light-text-info-footer">Copyright © 1999-2023 MercadoLibre Colombia LTDA.</span>
-                        <span className="font-normal text-xs leading-4 text-gray-light-text-info-footer">Carrera 17 Numero 93 - 09 Piso 3, Bogotá D.C., Colombia</span>
+                            className="font-normal text-xs leading-4 text-gray-9">Copyright © 1999-2023 MercadoLibre Colombia LTDA.</span>
+                        <span className="font-normal text-xs leading-4 text-gray-9">Carrera 17 Numero 93 - 09 Piso 3, Bogotá D.C., Colombia</span>
                     </div>
                 </div>
                 <div
