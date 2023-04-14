@@ -1,4 +1,3 @@
-import {Container} from "@mui/material";
 import SectionHeaderComponent from "@/components/SectionHeaderComponent";
 import CategoriesItemComponent from "@/components/categories_section/CategoriesItemComponent";
 
@@ -64,10 +63,13 @@ const CategoriesComponent = () => {
     return (
         <>
             <div className="mt-20">
+
                 <SectionHeaderComponent title={"Categorías populares"} subtitle={""} isSubtitleList={false}></SectionHeaderComponent>
-                <div className="justify-center mx-auto max-w-[1190px] w-full grid grid-cols-7 mb-10 bg-opacity-0.002 shadow-sm rounded-4">
+                <div
+                    className=" justify-center mx-auto max-w-[1190px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7 mb-10 bg-opacity-0.002 shadow-sm rounded-4 w-full">
                     {posts.map((item, key) => (
-                        <CategoriesItemComponent key={key} idKey={key} src={item.img} title={item.info}></CategoriesItemComponent>
+                        <CategoriesItemComponent key={key} idKey={key} src={item.img}
+                                                 title={item.info}></CategoriesItemComponent>
                     ))}
                 </div>
             </div>
