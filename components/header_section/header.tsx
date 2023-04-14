@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import CartIcon from './carIcon';
+import CartIcon from './CartIcon';
 const HeaderComponent=()=>{
     return( 
     <div className="flex bg-yellow-ml h-[100px] justify-center w-full basis-full ">

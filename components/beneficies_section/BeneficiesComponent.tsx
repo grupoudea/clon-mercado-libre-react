@@ -31,10 +31,10 @@ const BeneficiesComponent = () => {
     ]
 
   return (
-    <div className="mt-10 px-2">
+    <div className="mt-10 w-full">
         <SectionHeaderComponent title={"Beneficios de Mercado Puntos"} subtitle={"Ver todos los beneficios"}
                                         isSubtitleList={false}></SectionHeaderComponent>
-        <div className="m-auto flex flex-row gap-4 h-64">
+        <div className="m-auto flex flex-row justify-center gap-4 h-64">
 
             {
                 beneficies.map((item)=> (

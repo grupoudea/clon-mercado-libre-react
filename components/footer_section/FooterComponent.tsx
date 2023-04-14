@@ -1,5 +1,5 @@
 import React from 'react';
-import {FooterInfoComponent} from "@/components/footer-section/FooterInfoComponent";
+import {FooterInfoComponent} from "@/components/footer_section/FooterInfoComponent";
 import Image from "next/image";
 
 const FooterComponent = () => {

@@ -24,14 +24,14 @@ const BeneficiesItemComponent = (beneficiesProps: BeneficiesItemComponentProps) 
     }
 
   return (
-    <div className="rounded-md w-[384px] h-full">
+    <div className="rounded-md max-w-[384px] w-full h-full">
 
         <div>
             <Image className='rounded-md z-0 absolute' width={384} height={250} src={beneficiesProps.mainImg} alt="" />
         </div>
-
+|
         <div className={`${getGradient(beneficiesProps.platform)} mt-[138px]
-        w-[384px] h-[112px] rounded-md absolute z-1
+        max-w-[384px] w-full h-[112px] rounded-md absolute z-1
         `}>
             
             <div className="rounded-md flex flex-row items-center">

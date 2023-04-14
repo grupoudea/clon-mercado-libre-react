@@ -36,30 +36,30 @@ const CollectionsComponent = () => {
         },
     ];
     return (
-            <Container>
+            <>
                 <div className="mt-20">
-                <SectionHeaderComponent title={"Colecciones:"} subtitle={"Supermercado"}
-                                        isSubtitleList={true}></SectionHeaderComponent>
-                <div className={"mx-auto max-w-1184 flex mt-1 flex-row gap-4"}>
-                    <div className="bg-white shadow-md rounded-4">
-                        <div>
-                            <Image src={post.img} alt={""} width={383} height={383}/>
+                    <SectionHeaderComponent title={"Colecciones:"} subtitle={"Supermercado"}
+                                            isSubtitleList={true}></SectionHeaderComponent>
+                    <div className={"justify-center mx-auto max-w-[1184px] flex mt-1 flex-row gap-4"}>
+                        <div className="bg-white shadow-md rounded-4">
+                            <div>
+                                <Image src={post.img} alt={""} width={383} height={383}/>
+                            </div>
+                            <div className="flex flex-col ml-10 mt-10">
+                                <span
+                                    className="font-medium text-xs leading-3 flex items-center tracking-wider uppercase text-gray-600">descubre</span>
+                                <span
+                                    className="font-medium text-lg leading-7 flex items-center uppercase text-gray-700">Supermercado</span>
+                            </div>
                         </div>
-                        <div className="flex flex-col ml-10 mt-10">
-                            <span
-                                className="font-medium text-xs leading-3 flex items-center tracking-wider uppercase text-gray-600">descubre</span>
-                            <span
-                                className="font-medium text-lg leading-7 flex items-center uppercase text-gray-700">Supermercado</span>
+                        <div className="grid grid-cols-4 gap-x-4 gap-y-4">
+                            {posts.map((items, idKey) => (
+                                <CollectionsItemComponent src={items.img} idKey={idKey}></CollectionsItemComponent>
+                            ))}
                         </div>
-                    </div>
-                    <div className="grid grid-cols-4 gap-x-1 gap-y-1">
-                        {posts.map((items, idKey) => (
-                            <CollectionsItemComponent src={items.img} idKey={idKey}></CollectionsItemComponent>
-                        ))}
                     </div>
                 </div>
-            </div>
-            </Container>
+            </>
     )
 }
 
