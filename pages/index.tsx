@@ -12,7 +12,7 @@ import SuscriptionComponent from '@/components/suscription_section/SuscriptionCo
 import OfferComponent from '@/components/offers_section/OfferComponent';
 import CategoriesComponent from "@components/categories_section/CategoriesComponent";
 import BeneficiesComponent from '@/components/beneficies_section/BeneficiesComponent';
-import { CheckoutModal } from '@/components/header_section/CheckoutModal';
+import {CheckoutModal} from '@/components/header_section/CheckoutModal';
 
 const Index: NextPage = () => (
     <>
@@ -20,16 +20,15 @@ const Index: NextPage = () => (
             <CarContextProvider>
                 <Layout>
                     <BannerComponent></BannerComponent>
-                    <div className='pt-[40px] m-auto max-w-[1200px] w-full'>  {/*MAIN INTERIOR*/}
-                            <PaymentsComponent></PaymentsComponent>
-                            <OfferComponent></OfferComponent>
-                            <SuscriptionComponent></SuscriptionComponent>
-                            <BeneficiesComponent></BeneficiesComponent>
-                            <CollectionsComponent></CollectionsComponent>
-                            <CategoriesComponent></CategoriesComponent>
-                            <CheckoutModal></CheckoutModal>
-                            <Toast></Toast>
-                        
+                    <div className='py-[40px] m-auto max-w-[1200px] w-full'>
+                        <PaymentsComponent></PaymentsComponent>
+                        <OfferComponent></OfferComponent>
+                        <SuscriptionComponent></SuscriptionComponent>
+                        <BeneficiesComponent></BeneficiesComponent>
+                        <CollectionsComponent></CollectionsComponent>
+                        <CategoriesComponent></CategoriesComponent>
+                        <CheckoutModal></CheckoutModal>
+                        <Toast></Toast>
                     </div>
                 </Layout>
             </CarContextProvider>

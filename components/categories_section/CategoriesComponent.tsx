@@ -61,19 +61,17 @@ const CategoriesComponent = () => {
         },
     ];
     return (
-        <>
-            <div className="mt-20">
-
-                <SectionHeaderComponent title={"Categorías populares"} subtitle={""} isSubtitleList={false}></SectionHeaderComponent>
-                <div
-                    className=" justify-center mx-auto max-w-[1190px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7 mb-10 bg-opacity-0.002 shadow-sm rounded-4 w-full">
-                    {posts.map((item, key) => (
-                        <CategoriesItemComponent key={key} idKey={key} src={item.img}
-                                                 title={item.info}></CategoriesItemComponent>
-                    ))}
-                </div>
+        <div className="mt-20">
+            <SectionHeaderComponent title={"Categorías populares"} subtitle={""}
+                                    isSubtitleList={false}></SectionHeaderComponent>
+            <div
+                className="justify-center mx-auto max-w-[1190px] bg-opacity-0.002 shadow-sm rounded-4 w-full grid grid-cols-1 px-2 lg:grid-cols-7 px-0 md:grid-cols-3 sm:grid-cols-2">
+                {posts.map((item, key) => (
+                    <CategoriesItemComponent key={key} idKey={key} src={item.img}
+                                             title={item.info}></CategoriesItemComponent>
+                ))}
             </div>
-        </>
+        </div>
     )
 }
 
