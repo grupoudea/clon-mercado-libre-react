@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 import SuscriptionItemComponent from './SuscriptionItemComponent';
 
 
@@ -22,8 +21,8 @@ const SuscriptionComponent = () => {
 
   return (
     <>
-        <div className="shadow-sm m-auto w-[1180px] h-[340px] bg-white rounded-md ">
-            <div className="rounded-tl-md rounded-tr-md flex flex-row justify-between pl-[24px] pr-[24px] h-[87px]
+        <div className="max-w-[1200px] w-full shadow-sm m-auto h-[340px] bg-white rounded-md justify-center">
+            <div className=" rounded-tl-md rounded-tr-md flex flex-row justify-between pl-[24px] pr-[24px] h-[87px]
             bg-gradient-to-r from-pink-600 to-indigo-900">
                 <div className="font-roboto font-semibold text-2xl leading-8 flex items-center text-white">
                     <span>Suscríbete al nivel 6</span>
@@ -54,7 +53,7 @@ const SuscriptionComponent = () => {
 
             </div>
             <div className="box-border h-[81px] border-t-[1px]
-             border-gray-200 flex flex-row justify-end pr-8 pt-4">
+            border-gray-200 flex flex-row justify-end pr-8 pt-4">
                 <a className="w-[124px] h-12 bg-[#3483FA] rounded-md">
                     <span className="flex flex-col items-center text-center
                     font-roboto font-semibold text-[15px] leading-[48px] text-white">Suscríbete</span>

@@ -1,5 +1,5 @@
 import React from "react";
-import { PaymentItemComponent } from "./payment_item";
+import { PaymentItemComponent } from "./PaymentItem";
 const PaymentsComponent= ()=>{
 
     return(

@@ -1,13 +1,13 @@
 import React from 'react';
-import {FooterInfoComponent} from "@/components/footer-section/FooterInfoComponent";
+import {FooterInfoComponent} from "@/components/footer_section/FooterInfoComponent";
 import Image from "next/image";
 
 const FooterComponent = () => {
     return (
-        <footer className="md:px-16">
+        <footer className="m-auto max-w-[1200px] w-full py-[40px]">
             <FooterInfoComponent></FooterInfoComponent>
             <div className="bg-white border-t border-gray-300">
-                <div className=" ml-28 mt-4">
+                <div className="mt-4">
                     <div>
                         <ul className="flex flex-wrap justify-center md:justify-start md:ml-0">
                             <li className="font-normal text-xs leading-4 flex items-start mb-2 mr-4 text-gray-700">Trabaja
@@ -33,7 +33,8 @@ const FooterComponent = () => {
                         <span className="font-normal text-xs leading-4 text-gray-light-text-info-footer">Carrera 17 Numero 93 - 09 Piso 3, Bogotá D.C., Colombia</span>
                     </div>
                 </div>
-                <div className="flex flex-row gap-5 pt-5 ml-28 sm:px-1 border-t border-gray-300 mt-5">
+                <div
+                    className="flex flex-row gap-5 pt-5 sm:px-1 border-t border-gray-300 mt-5 items-center md:items-start">
                     <Image src="/media/main/footer/footer-logo-industria-comercio.png" alt={""} width={141}
                            height={30}/>
                     <Image src="/media/main/footer/footer-logo-pare.png" alt={""} width={200} height={34}/>
