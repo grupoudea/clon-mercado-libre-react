@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 
 interface BeneficiesItemComponentProps {
+    key:any,
     mainImg: string;
     secondaryImg: string;
     mainText: string
@@ -24,13 +25,13 @@ const BeneficiesItemComponent = (beneficiesProps: BeneficiesItemComponentProps) 
     }
 
   return (
-    <div className="rounded-md max-w-[384px] w-full h-full">
+    <div className="rounded-md max-w-[384px] w-full h-full"  key={beneficiesProps.key}>
 
         <div>
-            <Image className='rounded-md z-0 absolute' width={384} height={250} src={beneficiesProps.mainImg} alt="" />
+            <Image className='rounded-md z-0 absolute' width={384} height={270} src={beneficiesProps.mainImg} alt="" />
         </div>
 |
-        <div className={`${getGradient(beneficiesProps.platform)} mt-[138px]
+        <div className={`${getGradient(beneficiesProps.platform)} mt-[123px]
         max-w-[384px] w-full h-[112px] rounded-md absolute z-1
         `}>
             

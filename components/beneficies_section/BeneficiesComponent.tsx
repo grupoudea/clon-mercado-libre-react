@@ -5,6 +5,7 @@ import SectionHeaderComponent from '../SectionHeaderComponent'
 const BeneficiesComponent = () => {
     const beneficies =  [
         {
+            idkey:1,
             mainImg: "/media/main/beneficios/img/disney-star.png",
             secondaryImg: "/media/main/beneficios/img/comboplus-square.jpg.png",
             mainText: "Sin cargo con nivel 6",
@@ -12,6 +13,7 @@ const BeneficiesComponent = () => {
             platform: "DISNEY"
         },
         {
+            idkey:2,
             mainImg: "/media/main/beneficios/img/hbo.png",
             secondaryImg: "/media/main/beneficios/img/hbologoSquare.png",
             mainText: "Hasta 50% OFF",
@@ -20,6 +22,7 @@ const BeneficiesComponent = () => {
             platform: "HBO"
         },
         {
+            idkey:3,
             mainImg: "/media/main/beneficios/img/paramount.png",
             secondaryImg: "/media/main/beneficios/img/paramount-logo.png",
             mainText: "Hasta 50% OFF",
@@ -38,7 +41,7 @@ const BeneficiesComponent = () => {
 
             {
                 beneficies.map((item)=> (
-                    <BeneficiesItemComponent mainImg={item.mainImg} secondaryImg={item.secondaryImg}
+                    <BeneficiesItemComponent mainImg={item.mainImg} secondaryImg={item.secondaryImg} key={item.idkey}
                     mainText={item.mainText} secondaryText={item.secondaryText} tertiaryText={item.tertiaryText} platform={item.platform}></BeneficiesItemComponent>
                 ))
             }
