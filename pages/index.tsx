@@ -12,8 +12,8 @@ import SuscriptionComponent from '@/components/suscription_section/SuscriptionCo
 import OfferComponent from '@/components/offers_section/OfferComponent';
 import CategoriesComponent from "@components/categories_section/CategoriesComponent";
 import BeneficiesComponent from '@/components/beneficies_section/BeneficiesComponent';
-import {CheckoutModal} from '@/components/header_section/CheckoutModal';
 import StoresComponent from "@components/stores_section/StoresComponent";
+import { CheckoutModal } from '@/components/header_section/checkoutModal';
 
 const Index: NextPage = () => (
     <>
