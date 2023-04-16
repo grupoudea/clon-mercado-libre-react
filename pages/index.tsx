@@ -13,16 +13,16 @@ import OfferComponent from '@/components/offers_section/OfferComponent';
 import CategoriesComponent from "@components/categories_section/CategoriesComponent";
 import BeneficiesComponent from '@/components/beneficies_section/BeneficiesComponent';
 import StoresComponent from "@components/stores_section/StoresComponent";
-import { CheckoutModal } from '@/components/header_section/checkoutModal';
+import { CheckoutModal } from '@/components/header_section/CheckoutModal';
 
 const Index: NextPage = () => (
     <>
         <ToastContextProvider>
             <CarContextProvider>
                 <Layout>
-                    <BannerComponent></BannerComponent>
+                    {/* <BannerComponent></BannerComponent> */}
                     <div className='py-[40px] m-auto max-w-[1200px] w-full'>
-                        <PaymentsComponent></PaymentsComponent>
+                        {/* <PaymentsComponent></PaymentsComponent> */}
                         <OfferComponent></OfferComponent>
                         <SuscriptionComponent></SuscriptionComponent>
                         <BeneficiesComponent></BeneficiesComponent>
