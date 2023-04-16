@@ -21,7 +21,8 @@ const SuscriptionComponent = () => {
 
   return (
     <>
-        <div className="max-w-[1200px] w-full shadow-sm m-auto h-[340px] bg-white rounded-md justify-center">
+        <div className="max-w-[1200px] w-full shadow-sm m-auto h-[340px] bg-white rounded-md justify-center
+        max-sm:h-[450px]">
             <div className=" rounded-tl-md rounded-tr-md flex flex-row justify-between pl-[24px] pr-[24px] h-[87px]
             bg-gradient-to-r from-pink-600 to-indigo-900">
                 <div className="font-roboto font-semibold text-2xl leading-8 flex items-center text-white">
@@ -45,15 +46,16 @@ const SuscriptionComponent = () => {
             <div className="h-[172px] pl-6">
                 <span className="flex items-center pt-5 font-roboto font-normal text-[17px] leading-[18px] text-black">Consigue los mejores beneficios en Mercado Libre</span>
 
-                <div className="flex flex-row justify-between pt-8 pr-16">
-                    {suscriptions.map((item, id) => (
-                        <SuscriptionItemComponent src={item.img} text={item.text}></SuscriptionItemComponent>
+                <div className="flex flex-row justify-between pt-8 pr-16 
+                max-md:flex-wrap max-md:justify-center">
+                    {suscriptions.map((item, idKey) => (
+                        <SuscriptionItemComponent key={idKey} src={item.img} text={item.text}></SuscriptionItemComponent>
                     ))}
                 </div>
 
             </div>
             <div className="box-border h-[81px] border-t-[1px]
-            border-gray-200 flex flex-row justify-end pr-8 pt-4">
+            border-gray-200  flex-row justify-end pr-8 pt-4 hidden lg:flex">
                 <a className="w-[124px] h-12 bg-[#3483FA] rounded-md">
                     <span className="flex flex-col items-center text-center
                     font-roboto font-semibold text-[15px] leading-[48px] text-white">Suscríbete</span>

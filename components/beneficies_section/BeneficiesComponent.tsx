@@ -5,7 +5,6 @@ import SectionHeaderComponent from '../SectionHeaderComponent'
 const BeneficiesComponent = () => {
     const beneficies =  [
         {
-            idkey:1,
             mainImg: "/media/main/beneficios/img/disney-star.png",
             secondaryImg: "/media/main/beneficios/img/comboplus-square.jpg.png",
             mainText: "Sin cargo con nivel 6",
@@ -13,7 +12,6 @@ const BeneficiesComponent = () => {
             platform: "DISNEY"
         },
         {
-            idkey:2,
             mainImg: "/media/main/beneficios/img/hbo.png",
             secondaryImg: "/media/main/beneficios/img/hbologoSquare.png",
             mainText: "Hasta 50% OFF",
@@ -22,7 +20,6 @@ const BeneficiesComponent = () => {
             platform: "HBO"
         },
         {
-            idkey:3,
             mainImg: "/media/main/beneficios/img/paramount.png",
             secondaryImg: "/media/main/beneficios/img/paramount-logo.png",
             mainText: "Hasta 50% OFF",
@@ -37,11 +34,13 @@ const BeneficiesComponent = () => {
     <div className="mt-10 w-full">
         <SectionHeaderComponent title={"Beneficios de Mercado Puntos"} subtitle={"Ver todos los beneficios"}
                                         isSubtitleList={false}></SectionHeaderComponent>
-        <div className="m-auto flex flex-row justify-center gap-4 h-64">
+        <div className="m-auto flex flex-row justify-center gap-4 h-[270px] 
+        max-md:flex-col max-md:h-full max-md:items-center
+        max-xl:flex-wrap max-xl:h-full md:items-center">
 
             {
-                beneficies.map((item)=> (
-                    <BeneficiesItemComponent mainImg={item.mainImg} secondaryImg={item.secondaryImg} key={item.idkey}
+                beneficies.map((item, idKey)=> (
+                    <BeneficiesItemComponent key={idKey} mainImg={item.mainImg} secondaryImg={item.secondaryImg}
                     mainText={item.mainText} secondaryText={item.secondaryText} tertiaryText={item.tertiaryText} platform={item.platform}></BeneficiesItemComponent>
                 ))
             }

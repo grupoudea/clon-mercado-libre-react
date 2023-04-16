@@ -25,16 +25,15 @@ const BeneficiesItemComponent = (beneficiesProps: BeneficiesItemComponentProps) 
     }
 
   return (
-    <div className="rounded-md max-w-[384px] w-full h-full"  key={beneficiesProps.key}>
+    <div className="rounded-md w-[384px] h-[250px] 
+    max-sm:w-[320px]">
 
-        <div>
-            <Image className='rounded-md z-0 absolute' width={384} height={270} src={beneficiesProps.mainImg} alt="" />
+        <div className='w-[384px]'>
+            <Image className='rounded-md w-[384px] max-sm:w-[320px] h-[250px] z-0 absolute' width={384} height={250} src={beneficiesProps.mainImg} alt="" />
         </div>
-|
-        <div className={`${getGradient(beneficiesProps.platform)} mt-[123px]
-        max-w-[384px] w-full h-[112px] rounded-md absolute z-1
-        `}>
-            
+        <div className={`${getGradient(beneficiesProps.platform)} mt-[138px] rounded-md absolute z-1 
+        w-[384px] h-[112px]
+        max-sm:w-[320px]`}>
             <div className="rounded-md flex flex-row items-center">
                 <div className="m-4 ">
                     <Image width={80} height={80} src={beneficiesProps.secondaryImg} alt="" />
@@ -48,7 +47,6 @@ const BeneficiesItemComponent = (beneficiesProps: BeneficiesItemComponentProps) 
                     }
                     <span className="font-roboto font-semibold text-[22px] leading-6 text-white">{beneficiesProps.mainText}</span>
                     <span className="font-roboto font-normal text-[18px] leading-5 text-white">{beneficiesProps.secondaryText}</span>
-                   
                 </div>
             </div>
         </div>

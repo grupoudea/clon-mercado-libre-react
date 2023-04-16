@@ -8,12 +8,12 @@ interface SuscriptionItemComponentProps {
 
 const SuscriptionItemComponent = (suscriptionItemProps: SuscriptionItemComponentProps) => {
   return (
-    <div className="flex flex-row items-center">
-        <div className="mr-[17px]">
+    <div className="flex flex-row items-center max-lg:flex-wrap  max-md:pb-8">
+        <div className="mr-[17px] max-md:w-[50px] max-md:h-[50px]">
             <Image width={72} height={72} src={suscriptionItemProps.src} alt="" />
-
         </div>
-        <div className="w-60 h-12 font-roboto font-normal text-[16px] leading-4 flex items-center text-black">
+        <div className="w-60 max-lg:w-[140px] h-12 font-roboto font-normal text-[16px] leading-4 flex items-center text-black
+        max-lg:text-[12px]">
             <span>{suscriptionItemProps.text}</span>
         </div>
 
