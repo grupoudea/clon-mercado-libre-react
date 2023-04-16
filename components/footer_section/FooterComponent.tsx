@@ -34,7 +34,7 @@ const FooterComponent = () => {
                     </div>
                 </div>
                 <div
-                    className="flex flex-row gap-5 pt-5 sm:px-1 border-t border-gray-300 mt-5 items-center md:items-start">
+                    className="flex flex-col gap-5 pt-5 sm:px-1 border-t border-gray-300 mt-5 items-center md:flex-row md:items-start">
                     <Image src="/media/main/footer/footer-logo-industria-comercio.png" alt={""} width={141}
                            height={30}/>
                     <Image src="/media/main/footer/footer-logo-pare.png" alt={""} width={200} height={34}/>
