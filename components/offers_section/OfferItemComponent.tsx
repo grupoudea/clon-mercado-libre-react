@@ -3,13 +3,9 @@ import Image from 'next/image';
 import { useCart } from '@/context/CarContext';
 import { useToast } from '@/context/toastContext';
 
-interface ButtonProps {
-    productName: string;
-    price: number;
-}
 
 interface OfferItemComponentProps {
-    idKey: number;
+    idKey: any;
     src: string;
     price: number;
     discount: string;
@@ -47,11 +43,10 @@ const OfferItemComponent = ({idKey, src, price, discount, isFreeShipping, isFull
       }
 
   return (
-    <>
-        <div className="w-[224px] h-[350px] bg-white shadow-sm rounded-md" onClick={AddItemToCar}>
+    
+        <div className="debug-green hidden md:block w-[224px] h-[350px] bg-white shadow-sm rounded-md" key={idKey} onClick={AddItemToCar}>
             <div className="border-b border-gray-300">
                 <Image width={224} height={224} src={src} alt="" />
-
             </div>
             <div className="flex flex-row items-center gap-[10px] px-[1px] pt-0 pb-0 mt-[19px] ml-[16px]">
                 <span className="font-roboto font-normal font-medium:text-base text-[23px]">$ {addDots(price)}</span>
@@ -64,11 +59,8 @@ const OfferItemComponent = ({idKey, src, price, discount, isFreeShipping, isFull
                  {isFullFreeShipping && (
                     <Image width={41} height={23} src="/media/main/ofertas/svg/full-shipping.svg" alt="" />
                 )}
-
             </div>
-
         </div>
-    </>
   )
 }
 

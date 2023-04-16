@@ -34,11 +34,13 @@ const BeneficiesComponent = () => {
     <div className="mt-10 w-full">
         <SectionHeaderComponent title={"Beneficios de Mercado Puntos"} subtitle={"Ver todos los beneficios"}
                                         isSubtitleList={false}></SectionHeaderComponent>
-        <div className="m-auto flex flex-row justify-center gap-4 h-64">
+        <div className="debug-green m-auto flex flex-row justify-center gap-4 h-[270px] 
+        max-md:flex-col max-md:h-full max-md:items-center
+        max-xl:flex-wrap max-xl:h-full md:items-center">
 
             {
-                beneficies.map((item)=> (
-                    <BeneficiesItemComponent mainImg={item.mainImg} secondaryImg={item.secondaryImg}
+                beneficies.map((item, idKey)=> (
+                    <BeneficiesItemComponent key={idKey} mainImg={item.mainImg} secondaryImg={item.secondaryImg}
                     mainText={item.mainText} secondaryText={item.secondaryText} tertiaryText={item.tertiaryText} platform={item.platform}></BeneficiesItemComponent>
                 ))
             }

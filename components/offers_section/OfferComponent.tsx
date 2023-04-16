@@ -57,11 +57,11 @@ const OfferComponent = () => {
         <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
                                         isSubtitleList={false}></SectionHeaderComponent>
 
-            <div className="flex flex-row justify-center gap-x-[16px]">
+            <div className="debug flex flex-row justify-center gap-x-[16px] max-lg:gap-x-3">
 
                 {products.map((items, idKey) => (
                     
-                        <OfferItemComponent idKey={idKey} src={items.img} price={items.price} discount={items.discount} isFreeShipping={items.isFreeShipping} isFullFreeShipping={items.isFullFreeShipping}></OfferItemComponent>
+                        <OfferItemComponent key={idKey} idKey={idKey} src={items.img} price={items.price} discount={items.discount} isFreeShipping={items.isFreeShipping} isFullFreeShipping={items.isFullFreeShipping}></OfferItemComponent>
                 ))}
 
             </div>
