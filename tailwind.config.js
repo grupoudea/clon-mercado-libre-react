@@ -13,10 +13,11 @@ module.exports = {
       colors:{
         'yellow-ml':'#FFF159',
         'gray-menu':'rgba(51, 51, 51, 0.6)',
-        'blue-dropdown': '#3483fa',
+        'blue-link': '#3483fa',
         'gray-text-info-footer': '#4B4B4B',
-        'blue-text-link-info-footer': '#3483FA',
-        'gray-light-text-info-footer': '#999'
+        'gray-9': '#999',
+        'gray-3': '#333333',
+        'gray-e': '#EEEEEE'
       }
     },
   },

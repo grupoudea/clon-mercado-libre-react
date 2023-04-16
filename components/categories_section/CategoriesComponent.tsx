@@ -65,9 +65,9 @@ const CategoriesComponent = () => {
             <SectionHeaderComponent title={"Categorías populares"} subtitle={""}
                                     isSubtitleList={false}></SectionHeaderComponent>
             <div
-                className="justify-center mx-auto max-w-[1190px] bg-opacity-0.002 shadow-sm rounded-4 w-full grid grid-cols-1 px-2 lg:grid-cols-7 px-0 md:grid-cols-3 sm:grid-cols-2">
+                className="justify-center mx-auto max-w-[1190px] bg-opacity-0.002 shadow-sm rounded-4 w-full grid grid-cols-1 lg:grid-cols-7 px-0 md:grid-cols-3 sm:grid-cols-2">
                 {posts.map((item, key) => (
-                    <CategoriesItemComponent key={key} idKey={key} src={item.img}
+                    <CategoriesItemComponent key={key} idKey={key} src={item.img} total={posts.length}
                                              title={item.info}></CategoriesItemComponent>
                 ))}
             </div>

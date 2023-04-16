@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 
 interface BeneficiesItemComponentProps {
+    key:any,
     mainImg: string;
     secondaryImg: string;
     mainText: string

@@ -40,7 +40,7 @@ const CollectionsComponent = () => {
                                     isSubtitleList={true}></SectionHeaderComponent>
             <div className="justify-center mx-auto max-w-[1200px] flex flex-row">
                 <div
-                    className="bg-white shadow-md rounded-4 mr-4 h-fit 2xl:h-auto xl:h-auto lg:h-auto md:h-fit sm:h-fit hidden md:block">
+                    className="bg-white shadow-sm rounded-4 mr-4 h-fit 2xl:h-auto xl:h-auto lg:h-auto md:h-fit sm:h-fit hidden md:block">
                     <div>
                         <Image src={post.img} alt={""} width={383} height={383}/>
                     </div>

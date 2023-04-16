@@ -16,12 +16,12 @@ const FooterInfoComponent = () => {
                             tarjeta o en efectivo</h2>
                         <p>
                                <span
-                                   className="text-sm leading-snug text-gray-light-text-info-footer">
+                                   className="text-sm leading-snug text-gray-9">
                                 Con Mercado Pago, paga en cuotas y aprovecha la comodidad de financiación que te da tu banco, o hazlo conefectivo en puntos de pago. ¡Y siempre es seguro!
                                </span>
                         </p>
                         <span
-                            className="text-sm leading-5 text-blue-text-link-info-footer">Cómo pagar con Mercado Pago</span>
+                            className="text-sm leading-5 text-blue-link">Cómo pagar con Mercado Pago</span>
                     </div>
                 </div>
                 <div className="mt-24 w-px h-16 bg-gray-300 hidden md:block"></div>
@@ -35,11 +35,11 @@ const FooterInfoComponent = () => {
                             $ 90.000</h2>
                         <p>
                                <span
-                                   className="text-sm leading-snug text-gray-light-text-info-footer">
+                                   className="text-sm leading-snug text-gray-9">
                                 Con solo estar registrado en Mercado Libre, tienes envíos gratis en miles de productos seleccionados.
                                </span>
                         </p>
-                        <span className="text-sm leading-5 text-blue-text-link-info-footer">Conoce más sobre este beneficio</span>
+                        <span className="text-sm leading-5 text-blue-link">Conoce más sobre este beneficio</span>
                     </div>
                 </div>
                 <div className="mt-24 w-px h-16 bg-gray-300 hidden md:block"></div>
@@ -53,11 +53,11 @@ const FooterInfoComponent = () => {
                             principio a fin</h2>
                         <p>
                                <span
-                                   className="text-sm leading-snug text-gray-light-text-info-footer">
+                                   className="text-sm leading-snug text-gray-9">
                                 ¿No te gusta? ¡Devuélvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre protegido.
                                </span>
                         </p>
-                        <span className="text-sm leading-5 text-blue-text-link-info-footer">Cómo te protegemos</span>
+                        <span className="text-sm leading-5 text-blue-link">Cómo te protegemos</span>
                     </div>
                 </div>
             </div>
