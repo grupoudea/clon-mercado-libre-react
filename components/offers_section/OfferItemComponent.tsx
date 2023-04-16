@@ -44,7 +44,7 @@ const OfferItemComponent = ({idKey, src, price, discount, isFreeShipping, isFull
 
   return (
     
-        <div className="debug-green hidden md:block w-[224px] h-[350px] bg-white shadow-sm rounded-md" key={idKey} onClick={AddItemToCar}>
+        <div className="hidden md:block w-[224px] h-[350px] bg-white shadow-sm rounded-md" key={idKey} onClick={AddItemToCar}>
             <div className="border-b border-gray-300">
                 <Image width={224} height={224} src={src} alt="" />
             </div>

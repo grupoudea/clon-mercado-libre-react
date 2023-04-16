@@ -34,7 +34,7 @@ const BeneficiesComponent = () => {
     <div className="mt-10 w-full">
         <SectionHeaderComponent title={"Beneficios de Mercado Puntos"} subtitle={"Ver todos los beneficios"}
                                         isSubtitleList={false}></SectionHeaderComponent>
-        <div className="debug-green m-auto flex flex-row justify-center gap-4 h-[270px] 
+        <div className="m-auto flex flex-row justify-center gap-4 h-[270px] 
         max-md:flex-col max-md:h-full max-md:items-center
         max-xl:flex-wrap max-xl:h-full md:items-center">
 
