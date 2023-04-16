@@ -20,9 +20,9 @@ const Index: NextPage = () => (
         <ToastContextProvider>
             <CarContextProvider>
                 <Layout>
-                    {/* <BannerComponent></BannerComponent> */}
+                    <BannerComponent></BannerComponent>
                     <div className='py-[40px] m-auto max-w-[1200px] w-full'>
-                        {/* <PaymentsComponent></PaymentsComponent> */}
+                        <PaymentsComponent></PaymentsComponent>
                         <OfferComponent></OfferComponent>
                         <SuscriptionComponent></SuscriptionComponent>
                         <BeneficiesComponent></BeneficiesComponent>

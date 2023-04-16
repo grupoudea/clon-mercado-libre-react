@@ -12,7 +12,7 @@ const Layout = ({children}: LayoutProps) => (
         <Head>
             <title>Mercado Libre</title>
         </Head>
-        {/* <HeaderComponent></HeaderComponent> */}
+        <HeaderComponent></HeaderComponent>
         <main className='w-full bg-[#EBEBEB]'>
             {children}
         </main>
