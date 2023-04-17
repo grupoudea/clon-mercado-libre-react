@@ -44,8 +44,8 @@ const OfferItemComponent = ({idKey, src, price, discount, isFreeShipping, isFull
 
   return (
     
-        <div className="w-[224px] h-[350px] bg-white shadow-sm rounded-md
-        max-md:w-[200px] max-md:h-[300px]" 
+        <div className="w-[224px] h-[350px] cursor-pointer bg-white shadow-sm rounded-md
+        max-lg:w-[198px] max-xl:w-[210px] max-md:h-[300px]" 
         key={idKey} onClick={AddItemToCar}>
             <div className="border-b border-gray-300">
                 <Image width={224} height={224} src={src} alt="" />
