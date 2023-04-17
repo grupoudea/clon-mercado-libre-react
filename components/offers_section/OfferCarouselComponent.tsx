@@ -46,22 +46,6 @@ const OfferCarouselComponent = (items1: ListCaru) => {
                 <Image className='max-md:h-20 ml-[-60px] max-md:w-20' onClick={next} width={109} height={109} src="/media/main/ofertas/svg/Ellipse 1.svg" alt="" />
             
             </div>
-            {/* <div className="flex flex-row justify-center gap-x-[16px] max-lg:gap-x-3">
-                <div className=' z-0 absolute max-w-[1300px] w-full h-[350px] flex items-center
-                '>
-                    <div className='z-0 absolute max-w-[1300px] w-full flex flex-row justify-between
-                    '>
-                        <Image className='max-md:h-20 max-md:w-20' onClick={previous} width={109} height={109} src="/media/main/ofertas/svg/Ellipse 0.svg" alt="" />
-                        <Image className='max-md:h-20 max-md:w-20' onClick={next} width={109} height={109} src="/media/main/ofertas/svg/Ellipse 1.svg" alt="" />
-                    </div>
-                </div>
-                {visibleItems.map((item, key) => (
-                        <div key={key}>{item}</div>
-                    ))}
-            </div> */}
-
-
-
         </>
 
 
