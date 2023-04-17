@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (min-width: 444px) {
+  .xs {
+    /* Estilos para pantallas mayores a 900px */
+  }
+}
 
 
 .debug-4x {
