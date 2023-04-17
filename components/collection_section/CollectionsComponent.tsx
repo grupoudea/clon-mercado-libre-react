@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import CollectionsItemComponent from '@components/collection_section/CollectionsItemComponent';
 import Image from 'next/image';
 import SectionHeaderComponent from '@components/SectionHeaderComponent';

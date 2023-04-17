@@ -19,3 +19,7 @@
 .debug-green {
   border: 1px solid green;
 }
+
+.text-uppercase {
+  text-transform: uppercase;
+}

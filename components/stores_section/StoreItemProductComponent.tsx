@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 interface StoreItemProductComponentProps {
-  idKey: any;
+  idKey: number;
   img: string;
 }
 

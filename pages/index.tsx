@@ -14,6 +14,7 @@ import CategoriesComponent from '@components/categories_section/CategoriesCompon
 import BeneficiesComponent from '@/components/beneficies_section/BeneficiesComponent';
 import StoresComponent from '@components/stores_section/StoresComponent';
 import { CheckoutModal } from '@/components/header_section/CheckoutModal';
+import DiscoverComponent from '@/components/discover_section/DiscoverComponent';
 
 const Index: NextPage = () => (
   <>
@@ -26,6 +27,7 @@ const Index: NextPage = () => (
             <OfferComponent></OfferComponent>
             <SuscriptionComponent></SuscriptionComponent>
             <BeneficiesComponent></BeneficiesComponent>
+            <DiscoverComponent></DiscoverComponent>
             <StoresComponent></StoresComponent>
             <CollectionsComponent></CollectionsComponent>
             <CategoriesComponent></CategoriesComponent>
