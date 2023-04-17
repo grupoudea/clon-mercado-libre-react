@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 444px) {
+  .xs {
+    /* Estilos para pantallas mayores a 900px */
+  }
+}
+
+.debug-4x {
+  border: 4px solid blue;
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+.debug-green {
+  border: 1px solid green;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
