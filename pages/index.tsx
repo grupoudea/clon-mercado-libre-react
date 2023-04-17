@@ -21,7 +21,7 @@ const Index: NextPage = () => (
       <CarContextProvider>
         <Layout>
           <BannerComponent></BannerComponent>
-          <div className='py-[40px] m-auto max-w-[1200px] w-full'>
+          <div className='m-auto w-full max-w-[1200px] py-[40px]'>
             <PaymentsComponent></PaymentsComponent>
             <OfferComponent></OfferComponent>
             <SuscriptionComponent></SuscriptionComponent>

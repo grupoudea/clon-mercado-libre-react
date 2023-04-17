@@ -93,7 +93,6 @@
           "hrefRight"
         ],
         "aspects": [
-          "invalidHref",
           "preferButton"
         ]
       }

@@ -1,10 +1,9 @@
 import React from 'react';
-const BannerComponent=()=>{
-    return (
-        <div className='w-full hidden sm:flex'>
-            <img className='w-full' alt="" src="media/banner.jpg"></img>
-        </div>
-    )
-}
+import Image from 'next/image';
+const BannerComponent = () => (
+  <div className='hidden w-full sm:flex'>
+    <Image className='w-full' alt='' src='media/banner.jpg'></Image>
+  </div>
+);
 
-export {BannerComponent}
+export { BannerComponent };

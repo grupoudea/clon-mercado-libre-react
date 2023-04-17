@@ -1,30 +1,38 @@
-import {MdKeyboardArrowDown} from "react-icons/md";
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 interface SectionHeaderComponentProps {
-    title: string;
-    subtitle: string;
-    isSubtitleList: boolean
+  title: string;
+  subtitle: string;
+  isSubtitleList: boolean;
 }
 
-const SectionHeaderComponent = ({title, subtitle, isSubtitleList}: SectionHeaderComponentProps) => {
-    return (
-        <div className="flex flex-row pb-6 pl-1">
-            <h2>
-                <span className="text-2xl font-light text-gray-400">{title} </span>
+const SectionHeaderComponent = ({
+  title,
+  subtitle,
+  isSubtitleList,
+}: SectionHeaderComponentProps) => (
+  <div className='flex flex-row pb-6 pl-1'>
+    <h2>
+      <span className='text-2xl font-light text-gray-400'>{title} </span>
 
-                {!isSubtitleList && (
-                    <a className="text-xs sm:text-base ml-2 sm:ml-0 text-blue-500" href="#">{subtitle}</a>
-                )}
-                {isSubtitleList && (
-                    <a className="text-xs sm:text-2xl font-semibold text-gray-500 ml-2 sm:ml-0" href="#">{subtitle}
-                        <button className='icon-dark text-blue-link'>
-                            <MdKeyboardArrowDown/>
-                        </button>
-                    </a>
-                )}
-            </h2>
-        </div>
-    );
-}
+      {!isSubtitleList && (
+        <a className='ml-2 text-xs text-blue-500 sm:ml-0 sm:text-base' href='#'>
+          {subtitle}
+        </a>
+      )}
+      {isSubtitleList && (
+        <a
+          className='ml-2 text-xs font-semibold text-gray-500 sm:ml-0 sm:text-2xl'
+          href='#'
+        >
+          {subtitle}
+          <button className='icon-dark text-blue-link'>
+            <MdKeyboardArrowDown />
+          </button>
+        </a>
+      )}
+    </h2>
+  </div>
+);
 
 export default SectionHeaderComponent;
