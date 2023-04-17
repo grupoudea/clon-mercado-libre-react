@@ -78,74 +78,74 @@ const OfferComponent = () => {
             isFullFreeShipping: true
         }
     ]
-
-  return (
-    <>
-        <div className="hidden mt-[50px] h-[460px]
+    const items = products.map((items, idKey) => (
+        <OfferItemComponent key={idKey} idKey={idKey} src={items.img} price={items.price} discount={items.discount} isFreeShipping={items.isFreeShipping} isFullFreeShipping={items.isFullFreeShipping}></OfferItemComponent>
+    ))
+    return (
+        <>
+            <div className="hidden mt-[50px] h-[460px]
         xl:block">
-        <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
-                                        isSubtitleList={false}></SectionHeaderComponent>
+                <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
+                    isSubtitleList={false}></SectionHeaderComponent>
 
-            <OfferCarouselComponent numberItems={5} items={products.map((items, idKey) => (
-                    
-                    <OfferItemComponent key={idKey} idKey={idKey} src={items.img} price={items.price} discount={items.discount} isFreeShipping={items.isFreeShipping} isFullFreeShipping={items.isFullFreeShipping}></OfferItemComponent>
-            ))}/>
+                <OfferCarouselComponent numberItems={5} >
+                    {items}
+                </OfferCarouselComponent>
 
-        </div>
+            </div>
 
-        <div className="hidden mt-[50px] h-[460px]
+            <div className="hidden mt-[50px] h-[460px]
         lg:block xl:hidden">
-        <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
-                                        isSubtitleList={false}></SectionHeaderComponent>
+                <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
+                    isSubtitleList={false}></SectionHeaderComponent>
 
-            <OfferCarouselComponent numberItems={4} items={products.map((items, idKey) => (
-                    
-                    <OfferItemComponent key={idKey} idKey={idKey} src={items.img} price={items.price} discount={items.discount} isFreeShipping={items.isFreeShipping} isFullFreeShipping={items.isFullFreeShipping}></OfferItemComponent>
-            ))}/>
+                <OfferCarouselComponent numberItems={4} >
+                    {items}
+                </OfferCarouselComponent>
 
-        </div>
-        
 
-        <div className="hidden mt-[50px] h-[460px]
+            </div>
+
+
+            <div className="hidden mt-[50px] h-[460px]
         sm:block lg:hidden
         ">
-        <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
-                                        isSubtitleList={false}></SectionHeaderComponent>
+                <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
+                    isSubtitleList={false}></SectionHeaderComponent>
 
-            <OfferCarouselComponent numberItems={3} items={products.map((items, idKey) => (
-                    
-                    <OfferItemComponent key={idKey} idKey={idKey} src={items.img} price={items.price} discount={items.discount} isFreeShipping={items.isFreeShipping} isFullFreeShipping={items.isFullFreeShipping}></OfferItemComponent>
-            ))}/>
+                <OfferCarouselComponent numberItems={3} >
+                    {items}
+                </OfferCarouselComponent>
 
-        </div>
+            </div>
 
-        <div className="hidden mt-[50px] h-[460px]
+            <div className="hidden mt-[50px] h-[460px]
         xs:block sm:hidden
         ">
-        <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
-                                        isSubtitleList={false}></SectionHeaderComponent>
+                <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
+                    isSubtitleList={false}></SectionHeaderComponent>
 
-            <OfferCarouselComponent numberItems={2} items={products.map((items, idKey) => (
-                    
-                    <OfferItemComponent key={idKey} idKey={idKey} src={items.img} price={items.price} discount={items.discount} isFreeShipping={items.isFreeShipping} isFullFreeShipping={items.isFullFreeShipping}></OfferItemComponent>
-            ))}/>
+                <OfferCarouselComponent numberItems={2} >
+                    {items}
+                </OfferCarouselComponent>
 
-        </div>
 
-        <div className="mt-[50px] h-[460px]
+            </div>
+
+            <div className="mt-[50px] h-[460px]
         xs:hidden
         ">
-        <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
-                                        isSubtitleList={false}></SectionHeaderComponent>
+                <SectionHeaderComponent title={"Ofertas"} subtitle={"Ver todas"}
+                    isSubtitleList={false}></SectionHeaderComponent>
 
-            <OfferCarouselComponent numberItems={1} items={products.map((items, idKey) => (
-                    
-                    <OfferItemComponent key={idKey} idKey={idKey} src={items.img} price={items.price} discount={items.discount} isFreeShipping={items.isFreeShipping} isFullFreeShipping={items.isFullFreeShipping}></OfferItemComponent>
-            ))}/>
+                <OfferCarouselComponent numberItems={1} >
+                    {items}
+                </OfferCarouselComponent>
 
-        </div>
-    </>
-  )
+
+            </div>
+        </>
+    )
 }
 
 export default OfferComponent

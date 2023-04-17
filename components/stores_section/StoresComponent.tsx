@@ -49,7 +49,7 @@ const StoreComponent = () => {
             <SectionHeaderComponent title={"Las mejores tiendas te esperan"} subtitle={"Ver tiendas"}
                                     isSubtitleList={false}></SectionHeaderComponent>
             <div
-                className="grid grid-cols-1 px-2 lg:grid-cols-4 px-0 md:grid-cols-3 sm:grid-cols-2 gap-[16px] justify-center mx-auto  max-w-[1200px]">
+                className="grid grid-cols-1 px-2 xl:grid-cols-4 px-0 lg:grid-cols-3 md:grid-cols-2 gap-[16px] justify-center mx-auto  max-w-[1200px]">
                 {posts.map((item, idKey) => (
                     <StoreItemComponent idKey={idKey} headerImg={item.headerImg} logo={item.logo} title={item.title}
                                         items={item.items} key={idKey}></StoreItemComponent>

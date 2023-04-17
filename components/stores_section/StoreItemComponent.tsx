@@ -11,7 +11,7 @@ interface StoreItemComponentProps {
 
 const StoreItemComponent = ({idKey, headerImg, logo, title, items}: StoreItemComponentProps) => {
     return (
-        <div className="w-[284px] h-[340px] bg-white shadow-sm rounded-md" key={idKey}>
+        <div className="w-[284px] ml-auto mr-auto h-[340px] bg-white shadow-sm rounded-md" key={idKey}>
             <div>
                 <Image src={headerImg} alt={""} width={284} height={95}
                        className="bg-white absolute z-0 w-[284px] h-[95px] rounded-tl-[4px] rounded-tr-[4px]"/>
