@@ -42,7 +42,6 @@ const OfferCarouselComponent = (items1: ListCaru) => {
         {visibleItems.map((item, key) => (
           <div key={key}>{item}</div>
         ))}
-        
         <Image
           className='ml-[-60px] max-md:h-20 max-md:w-20'
           onClick={next}
